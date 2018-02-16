@@ -4,19 +4,28 @@ RSSTools-Pharo
 [![](https://img.shields.io/badge/platform-Pharo-lightgrey.svg?style=flat-square)](http://pharo.org/)
 [![](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://opensource.org/licenses/MIT/)
 
-Tools to work with [RSS 2.0](https://en.wikipedia.org/wiki/RSS) feeds.
+Tools to work with [RSS](https://en.wikipedia.org/wiki/RSS) feeds.
 
 * [Pharo 6.1](http://pharo.org/) reference platform
 
+### Install
+
+```smalltalk
+Metacello new 
+  repository: 'github://brackendev/RSSTools-Pharo';
+  baseline: 'RSSTools';
+  load.
+```
+
 ### Example Usage
 
-#### Create feed object from RSS XML
+#### Create feed object from RSS 2.0 XML
 
 ```smalltalk
 feed := RSSTools createFeedObjectWithXML: xml.
 ```
 
-#### Create RSS XML from feed object
+#### Create RSS 2.0 XML from feed object
 
 ```smalltalk
 xml := RSSTools createXMLWithFeedObject: feed.
