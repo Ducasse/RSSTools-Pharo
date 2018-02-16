@@ -1,0 +1,24 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "RSSTools-Models",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"title",
+		"description",
+		"pubdate",
+		"guid",
+		"link",
+		"author",
+		"category",
+		"categoryDomain",
+		"comments",
+		"enclosure",
+		"pubDate",
+		"source"
+	],
+	"name" : "RSSFeedItem",
+	"type" : "normal"
+}

@@ -1,0 +1,27 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "RSSTools-Models",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"language",
+		"rating",
+		"copyright",
+		"pubDate",
+		"lastBuildDate",
+		"category",
+		"docs",
+		"cloud",
+		"ttl",
+		"managingEditor",
+		"webMaster",
+		"skipHours",
+		"skipDays",
+		"image",
+		"items"
+	],
+	"name" : "RSSFeedOptionalItems",
+	"type" : "normal"
+}
