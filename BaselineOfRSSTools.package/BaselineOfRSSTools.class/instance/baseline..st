@@ -3,7 +3,7 @@ baseline: spec
 	<baseline>
 	spec
 		for: #common
-		do: [ spec package: 'AmazonPAARequester'.
+		do: [ spec package: 'RSSTools'.
 			spec
 				project: 'ZincHTTPComponents'
 				with: [ spec
@@ -11,9 +11,12 @@ baseline: spec
 						versionString: #stable;
 						repository: 'http://mc.stfx.eu/ZincHTTPComponents'
 					].
-				spec project: 'Soup' with: [
-				spec
-					className: 'ConfigurationOfSoup';
-					versionString: #'stable';
-					repository: 'http://smalltalkhub.com/mc/PharoExtras/Soup/main/' ]
+			spec
+				project: 'Soup'
+				with: [ spec
+						className: 'ConfigurationOfSoup';
+						versionString: #stable;
+						repository:
+							'http://smalltalkhub.com/mc/PharoExtras/Soup/main/'
+					]
 			]
