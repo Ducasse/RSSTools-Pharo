@@ -1,8 +1,9 @@
 RSSTools-Pharo
 ==============
-[![](https://img.shields.io/badge/language-Smalltalk-orange.svg?style=flat-square)](https://en.wikipedia.org/wiki/Smalltalk)
-[![](https://img.shields.io/badge/platform-Pharo-lightgrey.svg?style=flat-square)](http://pharo.org/)
-[![](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://opensource.org/licenses/MIT/)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/b81833cbc6484bf2ad69d56665566bee)](https://www.codacy.com/app/brackendev/RSSTools-Pharo?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=brackendev/RSSTools-Pharo&amp;utm_campaign=Badge_Grade)
+[![](https://img.shields.io/badge/platform-Pharo-lightgrey.svg)](http://pharo.org/)
+[![](https://img.shields.io/badge/language-Smalltalk-orange.svg)](https://en.wikipedia.org/wiki/Smalltalk)
+[![](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT/)
 
 Tools to work with [RSS](https://en.wikipedia.org/wiki/RSS) feeds.
 
