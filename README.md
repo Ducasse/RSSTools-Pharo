@@ -9,7 +9,7 @@ Tools to work with [RSS](https://en.wikipedia.org/wiki/RSS) feeds.
 
 * [Pharo 6.1](http://pharo.org/) reference platform
 
-### Install
+## Install
 
 ```smalltalk
 Metacello new 
@@ -18,21 +18,21 @@ Metacello new
   load.
 ```
 
-### Example Usage
+## Example Usage
 
-#### Create feed object from RSS 2.0 XML
+### Create feed object from RSS 2.0 XML
 
 ```smalltalk
 feed := RSSTools createFeedObjectWithXML: xml.
 ```
 
-#### Create RSS 2.0 XML from feed object
+### Create RSS 2.0 XML from feed object
 
 ```smalltalk
 xml := RSSTools createXMLWithFeedObject: feed.
 ```
 
-#### Create feed object
+### Create feed object
 
 ```smalltalk
 items := OrderedCollection new.
@@ -62,7 +62,7 @@ link: 'http://www.hostname.com/'.
 feed := RSSTools createFeedObjectWithRequiredItems: requiredItems optionalItems: optionalItems.
 ```
 
-### Author
+## Author
 
 ### **ʙʀᴀᴄᴋᴇɴ sᴘᴇɴᴄᴇʀ**<br />
 &nbsp;&nbsp;[![](https://cdn3.iconfinder.com/data/icons/free-social-icons/67/github_square_black-48.png)](http://github.com/brackendev/)
