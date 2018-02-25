@@ -65,6 +65,6 @@ feed := RSSTools createFeedObjectWithRequiredItems: requiredItems optionalItems:
 ## Author
 
 ### **ʙʀᴀᴄᴋᴇɴ sᴘᴇɴᴄᴇʀ**<br />
-&nbsp;&nbsp;[![](https://cdn3.iconfinder.com/data/icons/free-social-icons/67/github_square_black-48.png)](http://github.com/brackendev/)
-[![](https://cdn3.iconfinder.com/data/icons/free-social-icons/67/twitter_square_black-48.png)](http://twitter.com/brackendev/)
-[![](https://cdn3.iconfinder.com/data/icons/free-social-icons/67/linkedin_square_black-48.png)](https://www.linkedin.com/in/brackenspencer/)
+[![](https://cdn3.iconfinder.com/data/icons/free-social-icons/67/github_square_black-48.png)](http://github.com/brackendev/)
+&nbsp;[![](https://cdn3.iconfinder.com/data/icons/free-social-icons/67/twitter_square_black-48.png)](http://twitter.com/brackendev/)
+&nbsp;[![](https://cdn3.iconfinder.com/data/icons/free-social-icons/67/linkedin_square_black-48.png)](https://www.linkedin.com/in/brackenspencer/)
