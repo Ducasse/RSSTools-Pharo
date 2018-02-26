@@ -23,13 +23,13 @@ Metacello new
 ### Create feed object from RSS 2.0 XML
 
 ```smalltalk
-feed := RSSTools createFeedObjectWithXML: xml.
+RSSTools createFeedObjectWithXML: xml.
 ```
 
 ### Create RSS 2.0 XML from feed object
 
 ```smalltalk
-xml := RSSTools createXMLWithFeedObject: feed.
+RSSTools createXMLWithFeedObject: feed.
 ```
 
 ### Create feed object
