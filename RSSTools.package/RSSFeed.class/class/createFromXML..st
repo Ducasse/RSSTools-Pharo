@@ -1,3 +1,6 @@
 public
 createFromXML: xml
-	^ self createFromSoup: (Soup fromString: xml)
+| feed |
+feed := self createFromSoup: (Soup fromString: xml).
+feed xml: xml.
+^ feed
