@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "TestCase",
+	"category" : "RSSTools-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"testXML1",
+		"testXML2"
+	],
+	"name" : "RSSToolsTests",
+	"type" : "normal"
+}
