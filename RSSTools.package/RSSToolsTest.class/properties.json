@@ -9,6 +9,6 @@
 		"testXML1",
 		"testXML2"
 	],
-	"name" : "RSSToolsTests",
+	"name" : "RSSToolsTest",
 	"type" : "normal"
 }
