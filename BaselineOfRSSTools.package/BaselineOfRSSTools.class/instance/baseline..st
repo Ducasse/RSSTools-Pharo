@@ -4,7 +4,7 @@ baseline: spec
 	spec
 		for: #common
 		do: [ spec package: 'RSSTools'.
-			spec package: 'XMLHTMLParser'.
+			spec package: 'XMLParser'.
 			spec package: 'XPath'.
 			spec package: 'XMLWriter'
 			]
