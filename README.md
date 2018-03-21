@@ -5,7 +5,7 @@ RSSTools-Pharo
 [![](https://img.shields.io/badge/language-Smalltalk-orange.svg)](https://en.wikipedia.org/wiki/Smalltalk)
 [![](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT/)
 
-Tools to work with [RSS](https://en.wikipedia.org/wiki/RSS) feeds.
+Tools to work with [RSS](https://en.wikipedia.org/wiki/RSS) feeds and the [Fever API](https://feedafever.com/api).
 
 * [Pharo 6.1](http://pharo.org/) reference platform
 
@@ -18,16 +18,18 @@ Metacello new
   load.
 ```
 
-## Example Usage
+## Example RSS Feed Usage
 
 ```smalltalk
-"Create feed object from RSS 2.0 URL"
+" Create feed object from RSS 2.0 URL "
 rssFeed := RSSTools createRSSFeedWithURL: 'https://gist.githubusercontent.com/ToddG/1974651/raw/f7978c779bcb00aaa5a6551936e2387590cb303f/sample-rss-2.0-feed.xml'.
 
-"Create RSS 2.0 XML from feed object"
-xmlString := RSSTools createXMLWithRSSFeed: rssFeed.
+" Create RSS 2.0 XML from feed object "
+RSSTools createXMLWithRSSFeed: rssFeed.
+```
 
-"Create feed object"
+```smalltalk
+" Create feed object "
 items := OrderedCollection new.
 
 rssFeedItem := RSSFeedItem new 
@@ -52,7 +54,28 @@ title: 'RSS Feed';
 description: 'Feed Description';
 link: 'http://www.hostname.com/'.
 
-rssFeed := RSSTools createRSSFeedWithRSSFeedRequiredItems: rssFeedRequiredItems rssFeedOptionalItems: rssFeedOptionalItems.
+RSSTools createRSSFeedWithRSSFeedRequiredItems: rssFeedRequiredItems rssFeedOptionalItems: rssFeedOptionalItems.
+```
+
+
+## Example Fever API Usage
+
+```smalltalk
+" Create a session "
+feverSession := FeverSession sessionWithDomain: 'domain.com' email: 'fever@domain.com' password: 'password'.
+
+" Retrieve feeds "
+FeverTools retrieveFeedsForSession: feverSession.
+
+" Retrieve groups "
+FeverTools retrieveGroupsForSession: feverSession.
+
+" Retrieve Hot Links "
+FeverTools retrieveHotLinksForSession: feverSession page: 1 days: 1.
+
+" Retrieve items "
+FeverTools retrieveItemsForSession: feverSession.
+
 ```
 
 ## Author
