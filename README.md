@@ -21,15 +21,16 @@ Metacello new
 ## Example RSS Feed Usage
 
 ```smalltalk
-" Create feed object from RSS 2.0 URL "
+"Create feed object from RSS 2.0 URL"
 rssFeed := RSSTools createRSSFeedWithURL: 'https://gist.githubusercontent.com/ToddG/1974651/raw/f7978c779bcb00aaa5a6551936e2387590cb303f/sample-rss-2.0-feed.xml'.
 
-" Create RSS 2.0 XML from feed object "
+"Create RSS 2.0 XML from feed object"
 RSSTools createXMLWithRSSFeed: rssFeed.
 ```
 
 ```smalltalk
-" Create feed object "
+"Create feed object
+
 items := OrderedCollection new.
 
 rssFeedItem := RSSFeedItem new 
@@ -61,19 +62,19 @@ RSSTools createRSSFeedWithRSSFeedRequiredItems: rssFeedRequiredItems rssFeedOpti
 ## Example Fever API Usage
 
 ```smalltalk
-" Create a session "
+"Create a session"
 feverSession := FeverSession sessionWithDomain: 'domain.com' email: 'fever@domain.com' password: 'password'.
 
-" Retrieve feeds "
+"Retrieve feeds"
 FeverTools retrieveFeedsForSession: feverSession.
 
-" Retrieve groups "
+"Retrieve groups"
 FeverTools retrieveGroupsForSession: feverSession.
 
-" Retrieve Hot Links "
+"Retrieve Hot Links"
 FeverTools retrieveHotLinksForSession: feverSession page: 1 days: 1.
 
-" Retrieve items "
+"Retrieve items"
 FeverTools retrieveItemsForSession: feverSession.
 
 ```
