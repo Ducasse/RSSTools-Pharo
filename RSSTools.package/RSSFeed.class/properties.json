@@ -1,7 +1,7 @@
 {
-	"commentStamp" : "BrackenSpencer 3/21/2018 15:25",
+	"commentStamp" : "BrackenSpencer 3/21/2018 17:35",
 	"super" : "Object",
-	"category" : "RSSTools-Models",
+	"category" : "RSSTools-RSSModels",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],

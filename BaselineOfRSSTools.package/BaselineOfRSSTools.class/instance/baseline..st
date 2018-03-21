@@ -20,10 +20,23 @@ baseline: spec
 					].
 			spec
 				project: 'XMLWriter'
-				with: [
-					spec 
+				with: [ spec
 						className: 'ConfigurationOfXMLWriter';
 						versionString: #stable;
-						loads: 'default'; 
-repository: 'http://www.smalltalkhub.com/mc/PharoExtras/XMLWriter/main'.].
+						loads: 'default';
+						repository: 'http://www.smalltalkhub.com/mc/PharoExtras/XMLWriter/main'
+					].
+			spec
+				project: 'NeoJSON'
+				with: [ spec
+						className: #ConfigurationOfNeoJSON;
+						version: #stable;
+						repository: 'http://mc.stfx.eu/Neo'
+					].
+				spec
+				project: 'ZincHTTPComponents'
+				with: [ spec
+						className: #ConfigurationOfZincHTTPComponents;
+						versionString: #stable;
+						repository: 'http://mc.stfx.eu/ZincHTTPComponents' ]
 			]

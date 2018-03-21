@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "BrackenSpencer 3/21/2018 17:55",
+	"super" : "Object",
+	"category" : "RSSTools-FeverModels",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"id",
+		"title"
+	],
+	"name" : "FeverGroup",
+	"type" : "normal"
+}
