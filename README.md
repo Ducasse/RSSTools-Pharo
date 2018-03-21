@@ -29,7 +29,7 @@ RSSTools createXMLWithRSSFeed: rssFeed.
 ```
 
 ```smalltalk
-"Create feed object
+"Create feed object"
 
 items := OrderedCollection new.
 
