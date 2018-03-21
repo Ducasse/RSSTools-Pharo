@@ -20,46 +20,39 @@ Metacello new
 
 ## Example Usage
 
-### Create feed object from RSS 2.0 XML
-
 ```smalltalk
-RSSTools createFeedObjectWithXML: xml.
-```
+"Create feed object from RSS 2.0 URL"
+rssFeed := RSSTools createRSSFeedWithURL: 'https://gist.githubusercontent.com/ToddG/1974651/raw/f7978c779bcb00aaa5a6551936e2387590cb303f/sample-rss-2.0-feed.xml'.
 
-### Create RSS 2.0 XML from feed object
+"Create RSS 2.0 XML from feed object"
+xmlString := RSSTools createXMLWithRSSFeed: rssFeed.
 
-```smalltalk
-RSSTools createXMLWithFeedObject: feed.
-```
-
-### Create feed object
-
-```smalltalk
+"Create feed object"
 items := OrderedCollection new.
 
-item := RSSFeedItem new 
+rssFeedItem := RSSFeedItem new 
 title: 'Item 1';
 description: 'Item Description';
 link: 'http://www.hostname.com/'.
 
-items add: item.
+items add: rssFeedItem.
 
-item := RSSFeedItem new 
+rssFeedItem := RSSFeedItem new 
 title: 'Item 2';
 description: 'Item Description';
 link: 'http://www.hostname.com/'.
 
-items add: item.
+items add: rssFeedItem.
 
-optionalItems := RSSFeedOptionalItems new 
+rssFeedOptionalItems := RSSFeedOptionalItems new 
 items: items.
 
-requiredItems := RSSFeedRequiredItems new 
+rssFeedRequiredItems := RSSFeedRequiredItems new 
 title: 'RSS Feed';
 description: 'Feed Description';
 link: 'http://www.hostname.com/'.
 
-feed := RSSTools createFeedObjectWithRequiredItems: requiredItems optionalItems: optionalItems.
+rssFeed := RSSTools createRSSFeedWithRSSFeedRequiredItems: rssFeedRequiredItems rssFeedOptionalItems: rssFeedOptionalItems.
 ```
 
 ## Author
