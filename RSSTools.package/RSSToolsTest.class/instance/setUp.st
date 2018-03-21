@@ -2,7 +2,9 @@ initialization
 setUp
 	"https://gist.githubusercontent.com/ToddG/1974651/raw/f7978c779bcb00aaa5a6551936e2387590cb303f/sample-rss-2.0-feed.xml"
 
-	testXML1 := '<?xml version="1.0" encoding="utf-8"?>
+	testXML1 := (XMLDOMParser
+		on:
+			'<?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0">
         <channel>
 
@@ -21,5 +23,8 @@ setUp
                 </item>
 
         </channel>
-</rss>'.
-testXML2 := '<?xml version="1.0" ?><rss version="2.0"><channel><description>Insert witty or insightful remark here</description><link></link><title>Example Feed</title><skipDays></skipDays><skipHours></skipHours><item><title>Atom-Powered Robots Run Amok</title><description>Some text.</description><link></link><guid>urn:uuid:1225c695-cfb8-4ebb-aaaa-80da344efa6a</guid></item></channel></rss>'
+</rss>') parseDocument.
+	testXML2 := (XMLDOMParser
+		on:
+			'<?xml version="1.0"?><rss version="2.0"><channel><description>Insert witty or insightful remark here</description><link>http://example.org/</link><title>Example Feed</title><item><category /><description>Some text.</description><guid>urn:uuid:1225c695-cfb8-4ebb-aaaa-80da344efa6a</guid><link>http://example.org/2003/12/13/atom03</link><title>Atom-Powered Robots Run Amok</title></item></channel></rss>')
+		parseDocument

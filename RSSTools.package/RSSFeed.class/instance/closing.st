@@ -1,3 +1,0 @@
-private
-closing
-	^ '</channel></rss>'

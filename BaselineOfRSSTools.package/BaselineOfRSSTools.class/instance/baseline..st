@@ -4,19 +4,7 @@ baseline: spec
 	spec
 		for: #common
 		do: [ spec package: 'RSSTools'.
-			spec
-				project: 'ZincHTTPComponents'
-				with: [ spec
-						className: #ConfigurationOfZincHTTPComponents;
-						versionString: #stable;
-						repository: 'http://mc.stfx.eu/ZincHTTPComponents'
-					].
-			spec
-				project: 'Soup'
-				with: [ spec
-						className: 'ConfigurationOfSoup';
-						versionString: #stable;
-						repository:
-							'http://smalltalkhub.com/mc/PharoExtras/Soup/main/'
-					]
+			spec package: 'XMLHTMLParser'.
+			spec package: 'XPath'.
+			spec package: 'XMLWriter'
 			]

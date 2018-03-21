@@ -1,34 +1,5 @@
 I am RSSTools, an object to work with RSS feeds.
 
-Example usage (create feed object from RSS XML):
-
-feed := RSSTools createFeedObjectWithXML: xml.
-
-Example usage (create RSS XML from feed object):
-
-xml := RSSTools createXMLWithFeedObject: feed.
-
-Example usage (create feed object):
-
-items := OrderedCollection new.
-item := RSSFeedItem new 
-title: 'Item 1';
-description: 'Description 1';
-link: 'http://whatever1.com'.
-items add: item.
-item := RSSFeedItem new 
-title: 'Item 2';
-description: 'Description 2';
-link: 'http://whatever2.com'.
-items add: item.
-optionalItems := RSSFeedOptionalItems new 
-items: items.
-requiredItems := RSSFeedRequiredItems new 
-title: 'RSS Title';
-description: 'RSS Description';
-link: 'http://rsslink.com'.
-feed := RSSTools createFeedObjectWithRequiredItems: requiredItems optionalItems: optionalItems.
-	
 MIT License
 
 Copyright (c) 2018 Bracken Spencer
