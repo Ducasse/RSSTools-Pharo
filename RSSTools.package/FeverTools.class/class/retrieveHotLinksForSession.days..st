@@ -4,7 +4,7 @@ retrieveHotLinksForSession: aFeverSession days: days
 	allResults := OrderedCollection new.
 	hotLinks := [ :page | 
 	| results |
-	results := FeverTools retrieveHotLinksForSession: aFeverSession page: page days: days.
+	results := self retrieveHotLinksForSession: aFeverSession page: page days: days.
 	results isEmpty
 		ifTrue: [ ^ allResults ]
 		ifFalse: [ allResults addAll: results.
