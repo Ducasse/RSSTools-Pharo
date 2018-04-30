@@ -7,7 +7,7 @@ RSSTools-Pharo
 
 Tools to work with [RSS](https://en.wikipedia.org/wiki/RSS) feeds and the [Fever API](https://feedafever.com/api).
 
-* [Pharo 6.1](http://pharo.org/) reference platform
+[Pharo 6.1](http://pharo.org/) reference platform.
 
 ## Install
 
